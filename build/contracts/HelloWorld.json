@@ -12,7 +12,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -38,7 +39,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getHelloMessage\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getSecretNumber\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_secret\",\"type\":\"uint256\"}],\"name\":\"setSecretNumber\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/HelloWorld.sol\":\"HelloWorld\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/HelloWorld.sol\":{\"keccak256\":\"0x34f18e2c8b4dd771f7723d899f86d82e6250014c59257ed9b4af1b7a4cee7b4b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://eaa6f65723c2fc843e4ab53bbdb3cf183492e62ad741448eaccecca33704cb93\",\"dweb:/ipfs/QmXtAL9HXka2kn57YXrFezqHQ3hK5QL7js1Div3XbGJ6HB\"]}},\"version\":1}",
@@ -3020,6 +3022,12 @@
     "version": "0.8.10+commit.fc410830.Emscripten.clang"
   },
   "networks": {
+    "1337": {
+      "events": {},
+      "links": {},
+      "address": "0xAff49a327ca6cBb429AE5569080e5f858b0F2B48",
+      "transactionHash": "0x06342cf3ecca0dd80c50172e00075b1af85a08833bcecc8dedaef95fd0dbb66d"
+    },
     "5777": {
       "events": {},
       "links": {},
@@ -3028,7 +3036,8 @@
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-11-15T10:55:11.703Z",
+  "updatedAt": "2021-11-15T13:04:07.604Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

@@ -23,7 +23,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -36,14 +37,16 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
       "name": "fund",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"addressToAmountFunded\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"fund\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/FundMe.sol\":\"Fundme\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/FundMe.sol\":{\"keccak256\":\"0x38d5f74703b7b6da01aab4dab1381d3e206e05b63a26644449d7b8ac9e62406f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7ba53e4ad037e4de91c5e4756ee85cbe2c126be7f804e89cba3eaecf2c4878fc\",\"dweb:/ipfs/QmVS8yZ9cvANgwNCZpo6hHjyMpJdv8wfdEzZqBuHYBu1LL\"]}},\"version\":1}",
@@ -3205,6 +3208,12 @@
     "version": "0.8.10+commit.fc410830.Emscripten.clang"
   },
   "networks": {
+    "1337": {
+      "events": {},
+      "links": {},
+      "address": "0x18ff0E52D8D77B5982b736BAad6Aa56CAEeaF20c",
+      "transactionHash": "0x2fc0c0db11f24c7dd3d0daa3ed2e850f386ccf6b97a7cb621574191da91ff3d0"
+    },
     "5777": {
       "events": {},
       "links": {},
@@ -3213,7 +3222,8 @@
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-11-15T10:55:11.700Z",
+  "updatedAt": "2021-11-15T13:04:08.990Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

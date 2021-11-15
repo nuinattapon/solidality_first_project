@@ -1,5 +1,5 @@
-const FundMe = artifacts.require("FundMe");
+const FundMe = artifacts.require("FundMe")
 
 module.exports = function (deployer) {
-  deployer.deploy(FundMe);
-};
+  deployer.deploy(FundMe)
+}
