@@ -11,13 +11,14 @@ contract Fundme {
     mapping(address => uint256) public addressToAmountFunded;
 
     function fund() public payable {
-        // Add requirements - check price and check room status
         require(
             msg.value >= 0.01 ether,
-            "Not enough Ether provided. You need to fund me at least 0.01 ETH."
+            "Not enough Ether provided - minimum 0.01 ETH"
         );
-        
+
         addressToAmountFunded[msg.sender] += msg.value;
-        payable(msg.sender).transfer(msg.value);
+        bool sent = owner.send(msg.value);
+
+        require(sent, "Failed to send Ether");
     }
 }
